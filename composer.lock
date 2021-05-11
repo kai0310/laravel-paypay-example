@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "086cc90c79e6da4bd94ca764885c2733",
+    "content-hash": "8876b2ab02926414e223f4df4369c3b7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -479,6 +479,60 @@
                 "source": "https://github.com/fideloper/TrustedProxy/tree/4.4.1"
             },
             "time": "2020-10-22T13:48:01+00:00"
+        },
+        {
+            "name": "firebase/php-jwt",
+            "version": "v5.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/firebase/php-jwt.git",
+                "reference": "f42c9110abe98dd6cfe9053c49bc86acc70b2d23"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/f42c9110abe98dd6cfe9053c49bc86acc70b2d23",
+                "reference": "f42c9110abe98dd6cfe9053c49bc86acc70b2d23",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=4.8 <=9"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Firebase\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Neuman Vong",
+                    "email": "neuman+pear@twilio.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Anant Narayanan",
+                    "email": "anant@php.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to encode and decode JSON Web Tokens (JWT) in PHP. Should conform to the current spec.",
+            "homepage": "https://github.com/firebase/php-jwt",
+            "keywords": [
+                "jwt",
+                "php"
+            ],
+            "support": {
+                "issues": "https://github.com/firebase/php-jwt/issues",
+                "source": "https://github.com/firebase/php-jwt/tree/v5.2.1"
+            },
+            "time": "2021-02-12T00:02:00+00:00"
         },
         {
             "name": "fruitcake/laravel-cors",
@@ -1655,6 +1709,70 @@
             "time": "2021-04-09T13:42:10+00:00"
         },
         {
+            "name": "paypayopa/php-sdk",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paypay/paypayopa-sdk-php.git",
+                "reference": "ed31b3e6d8db01b376f6949c22e479073df15666"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paypay/paypayopa-sdk-php/zipball/ed31b3e6d8db01b376f6949c22e479073df15666",
+                "reference": "ed31b3e6d8db01b376f6949c22e479073df15666",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "firebase/php-jwt": "^5.2",
+                "guzzlehttp/guzzle": "^6.0 || ^7.0",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "php-coveralls/php-coveralls": "^2.2",
+                "phpstan/phpstan": "^0.12.33",
+                "phpunit/phpunit": "^9"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/core/"
+                ],
+                "psr-4": {
+                    "PayPay\\OpenPaymentAPI\\": "src/",
+                    "PayPay\\OpenPaymentAPI\\Controller\\": "src/Controllers/"
+                },
+                "files": [
+                    "src/helpers/utility_hmac.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "PayPay Open Source Development Team",
+                    "email": "opensource@paypay-corp.co.jp"
+                }
+            ],
+            "description": "PHP SDK for PayPay Open Payment API",
+            "keywords": [
+                "japan",
+                "opa",
+                "payment",
+                "paypay",
+                "qr",
+                "qrcode"
+            ],
+            "support": {
+                "issues": "https://github.com/paypay/paypayopa-sdk-php/issues",
+                "source": "https://github.com/paypay/paypayopa-sdk-php/tree/1.0.3"
+            },
+            "time": "2021-04-26T09:58:44+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.7.5",
             "source": {
@@ -2314,6 +2432,62 @@
                 }
             ],
             "time": "2020-08-18T17:17:46+00:00"
+        },
+        {
+            "name": "revolution/laravel-paypay",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kawax/laravel-paypay.git",
+                "reference": "328e22a42044c4abeaad43da2c548e4f8d008a56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kawax/laravel-paypay/zipball/328e22a42044c4abeaad43da2c548e4f8d008a56",
+                "reference": "328e22a42044c4abeaad43da2c548e4f8d008a56",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "^6.0|^7.0|^8.0",
+                "paypayopa/php-sdk": "^1.0",
+                "php": "^7.3||^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Revolution\\PayPay\\PayPayServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Revolution\\PayPay\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "kawax",
+                    "email": "kawaxbiz@gmail.com"
+                }
+            ],
+            "description": "Simple integration Laravel and PayPay API",
+            "keywords": [
+                "laravel",
+                "paypay"
+            ],
+            "support": {
+                "issues": "https://github.com/kawax/laravel-paypay/issues",
+                "source": "https://github.com/kawax/laravel-paypay/tree/1.0.4"
+            },
+            "time": "2021-05-09T12:54:59+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
